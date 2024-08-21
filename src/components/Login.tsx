@@ -67,11 +67,11 @@ const Login = () => {
   };
 
   return (
-    <div className="w-1/2 flex items-center justify-center bg-gray-50">
+    <div className="w-1/2 flex items-center justify-center bg-black">
       <div className="w-full max-w-sm px-6 py-12">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           
-          <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+          <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white">
           <img
             alt="Your Company"
             src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
@@ -84,7 +84,7 @@ const Login = () => {
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form onSubmit={handleLoginClick} className="space-y-6">
             <div>
-              <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+              <label htmlFor="email" className="block text-sm font-medium leading-6 text-white">
                 아이디
               </label>
               <div className="mt-2">
@@ -103,7 +103,7 @@ const Login = () => {
 
             <div>
               <div className="flex items-center justify-between">
-                <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
+                <label htmlFor="password" className="block text-sm font-medium leading-6 text-white">
                   비밀번호
                 </label>
               </div>
@@ -129,7 +129,7 @@ const Login = () => {
                 onChange={(e) => setRememberMe(e.target.checked)}
                 className="mr-2"
               />
-              <label htmlFor="rememberMe" className="text-sm text-gray-600">
+              <label htmlFor="rememberMe" className="text-sm text-white">
                 아이디 저장
               </label>
 
@@ -140,7 +140,7 @@ const Login = () => {
               
               <button
                 type="submit"
-                className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mt-4"
+                className="flex w-full justify-center rounded-md bg-blue-400 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mt-4"
               >
                 로그인
               </button>
@@ -152,4 +152,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Homepage;
