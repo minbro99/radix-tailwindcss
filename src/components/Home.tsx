@@ -1,4 +1,4 @@
-// src/components/NavBar.tsx
+
 import { Disclosure, DisclosureButton } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Map from '../pages/Map';
