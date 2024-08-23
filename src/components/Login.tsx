@@ -60,7 +60,7 @@ const Login = () => {
       } else {
         localStorage.removeItem('rememberedUserName');
       }
-      window.location.href = '/home';
+      window.location.href = '/dark';
     } else {
       alert('잘못된 사용자 이름 또는 비밀번호입니다.');
     }
