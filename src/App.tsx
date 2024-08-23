@@ -1,19 +1,22 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Login from './components/Login';
-import Home from './components/Home';
-import LoginSuccess from './components/loginsuccess';
+import HomeDark from "./pages/NavBar/HomeColor/HomeDark";
+import HomeLight from "./pages/NavBar/HomeColor/HomeLight";  
 
 function App() {
   return(
     <>
-    <BrowserRouter>
-    <Login />
+    
+    
     <Routes>
-      <Route path="/home" element={<Home />} />.
-      <Route path="/loginsuccess" element={<LoginSuccess />} />
+      <Route path="/" element={<Login />} />
+
+       <Route path="/dark" element={<HomeDark />} />
+       <Route path="/light" element={<HomeLight />} />
     </Routes>
-    </BrowserRouter>
+    
     </>
   )
 }
