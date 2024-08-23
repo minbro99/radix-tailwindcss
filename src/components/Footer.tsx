@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom";
+import React from "react";
 
 export default function Footer() {
-    return (
-      <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-          <Link to='/http://www.nuritelecom.com/kr/main/main.html'>
-                <svg width="114" height="23" viewBox="0 0 114 23" fill="none" xmlns="http://www.w3.org/2000/svg" className="fill-black">
+  return (
+    <div className="bg-white py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+          <a href="http://www.nuritelecom.com/kr/main/main.html" target="_blank" rel="noopener noreferrer">
+          <svg width="114" height="23" viewBox="0 0 114 23" fill="none" xmlns="http://www.w3.org/2000/svg" className="fill-black">
                   <path d="M101.32 15.3094C100.684 16.1943 99.7581 17.0919 97.7191 17.0919C97.4909 17.0919 97.1164 17.0816 96.8753 17.0662C95.2852 16.9582 94.5158 15.5409 94.3132 14.7204L94.2747 14.5712H98.4168C99.5324 14.5712 102.492 14.5712 102.492 11.2558C102.492 8.85854 100.248 7.76538 98.1628 7.76538H97.0497C94.1747 7.76538 92.4563 9.51186 92.4563 12.4364V14.08C92.4563 16.2225 93.7617 18.6172 96.624 18.8101C96.9112 18.8281 97.1857 18.8384 97.4421 18.8384C99.8658 18.8384 101.456 18.0616 102.754 16.2431L101.323 15.3069L101.32 15.3094ZM94.2414 12.4364C94.2414 10.5793 95.3544 9.51443 97.296 9.51443H98.2629C98.5142 9.51443 100.71 9.5633 100.71 11.2558C100.71 12.2975 99.9402 12.8248 98.4193 12.8248H94.2414V12.4364Z" fill="current"></path>
                   <path d="M56.4807 14.0003C56.4807 15.469 55.0136 17.0534 52.6413 17.0534C50.6587 17.0534 50.1355 15.2889 50.1355 14.3553V7.92236H48.353V14.7359C48.353 16.5159 49.3584 18.6559 52.1924 18.8282C52.3155 18.8359 52.4438 18.8385 52.572 18.8385C53.2029 18.8385 55.2393 18.5581 56.2678 17.3055L56.4807 17.0457V18.5736H58.2657V7.92236H56.4807V14.0003Z" fill="current"></path>
                   <path d="M65.4648 7.72669C63.867 7.72669 62.6975 8.30028 61.7998 9.29569L61.5895 9.52718V7.9196H59.8044V18.5708H61.5895V13.0356C61.5895 10.4763 63.5387 9.46031 65.2058 9.46031C66.4497 9.46031 67.1755 10.1522 67.4115 10.376L68.7938 9.22625C68.5271 8.90987 67.4781 7.72412 65.4648 7.72412V7.72669Z" fill="current"></path>
@@ -19,11 +19,10 @@ export default function Footer() {
                   <path d="M4.34466 4.44196H4.33953C3.87788 4.00727 3.25978 3.73462 2.575 3.73462C1.15413 3.73462 0 4.89208 0 6.31961V22.9999L15.2474 13.411L4.34466 4.44196Z" fill="#00489D"></path>
                   <path d="M21.5001 18.5579H21.5052C21.9669 18.9926 22.585 19.2627 23.2698 19.2627C24.6932 19.2627 25.8448 18.1052 25.8448 16.6803V0L10.5974 9.5889L21.5001 18.5579Z" fill="#00ADEC"></path>
                 </svg>
-                <span className="text-base font-medium text-[#888888]">Copyright 2023 누리플렉스 CO., LTD. All Reserved</span>
-              </Link>
-          </div>
+            <span className="text-base font-medium text-black">Copyright 2023 누리플렉스 CO., LTD. All Reserved</span>
+          </a>
         </div>
       </div>
-    )
-  }
-  
+    </div>
+  );
+}
